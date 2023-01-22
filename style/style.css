@@ -1,0 +1,63 @@
+body {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+/* Haut de la page */
+header {
+    background-color: rgb(158, 209, 245,0.6);
+    display: flex;
+
+}
+#logo img {
+    height: 150px;
+    width: 150px;
+    margin: 15px;   
+}
+.en_tete {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    background-color:rgb(197, 199, 249);
+    height: 100px;
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-top: 0;
+    width: 500px;
+    align-items: flex-start;
+    border-radius: 3px;
+}
+h1 {
+    margin-top: 10px;
+}
+h2 {
+   position:absolute;
+   top: 30px;
+}
+
+.connexion {
+    position: absolute;
+    display: flex;
+    right: 300px;
+    background-color: rgb(110, 116, 255);  
+    border-radius: 3px;
+    height: 30px;
+    align-content: center;
+    margin-top: 25px;
+    padding: 5px;
+    text-rendering: initial;
+}
+.connexion p {
+    display: block;
+    position: relative;
+    bottom: 10px;
+    
+}
+
+/* Barre de navigation  */
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
