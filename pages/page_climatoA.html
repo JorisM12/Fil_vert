@@ -5,12 +5,12 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Topoclimat</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='./style/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../style/style.css'>
 </head>
 <body>
     <header>
         <div id="logo">
-            <img src="./image/logo.jpg" alt="logo">
+            <img src="../image/logo.jpg" alt="logo">
         </div>
         <div class="en_tete">
             <h1>TOPOCLIMAT</h1><br>
@@ -26,24 +26,30 @@
     <main>
         <nav>
             <ul>
-                <li><a href="./index.html">ACCUEIL</a></li>
-                <li><a href="./page_deux.html">LA REGION</a></li>
+                <li><a href="../index.html">ACCUEIL</a></li>
+                <li><a href="../pages/page_deux.html">LA REGION</a></li>
                 <li>CLIMATOLOGIE</a></li>
                 <li><a href="#">TEMPS REEL</a></li>
                 <li><a href="#">ARCHIVES</a></li>
             </ul>
        </nav>
-       <section class="tab_climat">
+       <section id="tab_climat">
         <div>
             <ul>
                 <a href="#"><li>STATION 1</li></a>
-                <a href="#"><li>STATION 1</li></a>
-                <a href="#"><li>STATION 1</li></a>
-                <a href="#"><li>STATION 1</li></a>
+                <a href="#"><li>STATION 2</li></a>
+                <a href="#"><li>STATION 3</li></a>
+                <a href="#"><li>STATION 4</li></a>
             </ul>
-
         </div>
-
+       </section>
+       <section id="carte">
+            <div>
+                <map name="carte_Stations">
+                    <area target="_blank" alt="Metz" title="" href="../index.html" coords="458,228,411,272" shape="rect">
+                </map>
+                <img src="../image/carte.jpg" alt="carte de la région" usemap="carte_Stations">
+            </div>
 
        </section>
       
