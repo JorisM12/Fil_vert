@@ -97,7 +97,7 @@ nav  li {
     
 }
 nav li:hover {
-    box-shadow: -1px 0px 13px 0px #000000;
+    box-shadow: inset 0px 0px 0px 3px white;
 }
 
 nav li a {
@@ -127,7 +127,6 @@ h3 {
     visibility: visible;
 
 }
-
 .article_pa {
     position: relative;
     display: flex;
@@ -145,17 +144,14 @@ h3 {
     font-weight: 200;
     
 }
-
 .img_pa img{
     width: 100%;
     height: 100%;
-    left: -150px;
-    
+    left: -150px;   
 }
 .text_pa {
     margin-bottom: 50px;
 }
-
 .page {
     display: flex;
     flex-direction: row;
@@ -188,9 +184,7 @@ h3 {
     color: white;
     font-weight: bold;
 }
-
 /* Pied de la page  */
-
 footer {
     position: relative;
     background-color: rgb(158, 209, 245,0.6);
@@ -462,7 +456,7 @@ footer p {
     margin: 20px;
     margin-right: 50px;
     padding: 50px;
-    background-color: blue;
+    background-color: rgb(146, 146, 229);
     list-style-type: none;
     border-radius: 3px;
 }
@@ -470,9 +464,8 @@ footer p {
     text-decoration: none;
     color: white;
 }
-#tab_climat a:active {
-    background-color: aqua;
-    box-shadow: 2px 0px 12px -2px #000000; 
+#tab_climat li:active {
+    box-shadow: inset 0px 0px 0px 3px white;    
 }
 #carte {
     display: none;
