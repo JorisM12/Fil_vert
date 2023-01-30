@@ -485,6 +485,9 @@ footer p {
     }
 }
 /* CSS page station  */
+#donnees {
+    visibility: hidden;
+}
 #page_station article {
     margin: 5%;
     background-color:rgba(192, 192, 192, 1); 
@@ -504,12 +507,25 @@ footer p {
 section {
     max-width: 90%;
 }
-@media screen and (min-width:1000px ) {
+@media screen and (min-width:700px){
+    #donnees {
+        visibility: hidden;
+    }
+    #graphique {
+    position: relative;
+    left: 15%;  
+    margin-bottom: 5%;
+    max-width: 50%;
+    }
+}
+@media screen and (min-width:1000px){
     #graphique {
         position: relative;
         text-align: center;
         top: 0px;
         margin-bottom: 5%;
+        position:relative;
+        left: 25%;
     }    
     table,td,tr{
         border: 1px solid black;
@@ -540,6 +556,9 @@ section {
     #pluie {
         font-weight: bold;
         color: blueviolet;
+    }
+    #donnees {
+        visibility: visible;
     }
 }
 
