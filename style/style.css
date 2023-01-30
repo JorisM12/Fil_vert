@@ -358,12 +358,12 @@ footer p {
     border-radius: 3px;
 }
 #exit {   
+    position: relative;
     grid-area: quitter;
     background-color: rgb(245, 9, 9);  
     border-radius: 3px;
     height: 30px;
     align-content: center;
-    margin-top: 25px;
     padding: 5px;
 }
 #exit p {
@@ -431,7 +431,7 @@ footer p {
         font-size: 1.5em;
     }
     #log_in {
-        width: 700px;       
+        width: 700px;   
     }
     label {
         font-size: 1.2em;
@@ -442,6 +442,13 @@ footer p {
     h3#titre_login {
         max-width: 70%;
     }
+    form {
+        display: block;
+        position: relative;
+        top: -60%;
+        left: 5%;
+    }
+
 }
 /* CSS page carte climato */
 #tab_climat {
