@@ -7,6 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Roboto, Arial;
+    font-weight: 300;
 }
 /* Haut de la page */
 header {
@@ -34,6 +35,7 @@ header {
     width: 500px;
     align-items: flex-start;
     border-radius: 3px;
+    max-width: 100%;
 }
 h1 {
     margin-top: 10px;
@@ -201,9 +203,7 @@ footer p {
     margin: 5px;
     font-weight: bold;
 }
-
 @media screen and (max-width:1000px ) {
-
     .page {
         flex-direction: column;
         
@@ -218,7 +218,6 @@ footer p {
         align-items: center;
 
     }
-
     nav {
         display: none;
     }
@@ -229,7 +228,6 @@ footer p {
         right: 200px;
     }   
 }
-
 @media screen and (max-width:700px ) {
 
     nav {
@@ -245,9 +243,7 @@ footer p {
         /* right: 200px; */
         /* top: 100px; */
         max-width: 40px;       
-    }
-
-    
+    }    
 }
 @media screen and (max-width:540px ) {
     #log {
@@ -271,7 +267,6 @@ footer p {
     font-weight: 200;
     text-align: justify;
 }
-
 #titre_page_deux {
     left: -350px;
 }
@@ -279,22 +274,18 @@ footer p {
     float: right;
     margin: 5px;
 }
-
 #page_deux section {
     position: relative;
     top: -75px;
 }
-
 .img_article_p2b {
     float: left;
     margin: 5px;
 }
-
 #titre_page_deux_b {
     display: inline;
     left: 350px;
 }
-
 @media screen and (max-width:1100px ) {
 
     #page_deux section {
@@ -316,11 +307,9 @@ footer p {
 
 }
 /* CSS page connexion  */
-
 #page_connexion {
     font-size:small;
 }
-
 #page_connexion section  {
     display: grid;
     grid-template-areas: "titreh3"
@@ -339,17 +328,23 @@ footer p {
     grid-area: titreh3;
     top: 0px;
     display: inline;
-    margin-bottom: 5px;
     text-align: center;
-    align-content: center;
     bottom: 15px;
-    font-size: smaller;
+    font-size: 0.8em;
+    font-weight: 700;
+    max-width: 38%;
 }
 #log_in {
     grid-area: bloc_login;
     background-color: rgb(217, 217, 217);
     max-height: 50%;
     margin-top: 25px;
+    border-radius: 3px;
+}
+#page_connexion  input.connexion {
+    display: block;
+    position: absolute;
+    top: -100%; 
 }
 
 #page_connexion form {
@@ -357,13 +352,12 @@ footer p {
 }
 .in_form {
     margin:20px 0px 20px 0px;
+    text-align: center;
 }
 .in_form input{
     border-radius: 3px;
 }
-
-#exit {
-    
+#exit {   
     grid-area: quitter;
     background-color: rgb(245, 9, 9);  
     border-radius: 3px;
@@ -386,7 +380,6 @@ footer p {
 #exit:hover {
     box-shadow: -1px 0px 13px 0px #000000;
 }
-
 #page_connexion  .connexion {
     position: absolute;
     display: flex;
@@ -410,27 +403,29 @@ footer p {
 }
 .boutonB {
     position: relative;
-    left: 130px;
+    left: 90%;
     bottom: 10px;
     background-color: #000000;
-
 }
-
 @media screen and (min-width:700px ) {
     .log_in {
-        width: 500px;       
+        width: 500px;          
     }
     .in_form {
         text-align: center;
+        padding-right: 50px;
     }
     .boutonB {
-        left: 50px;
+        left: 50%;
+    }
+    h3#titre_login {
+        max-width: 47%;
     }
 
 }
 @media screen and (min-width:1000px ) {
     .boutonB {
-        left: 50px;
+        left: 10%;
     }
     #titre_login {
         font-size: 1.5em;
@@ -444,15 +439,14 @@ footer p {
     #exit {
         display: none;
     }
-
+    h3#titre_login {
+        max-width: 70%;
+    }
 }
-
 /* CSS page carte climato */
-
 #tab_climat {
     display: flex;
     flex-direction: column;
-
 }
 #tab_climat  li {
     margin: 20px;
@@ -482,11 +476,8 @@ footer p {
     #carte  {
         display: block;
     }
-
 }
-
 /* CSS page station  */
-
 #page_station article {
     margin: 5%;
     background-color:rgba(192, 192, 192, 1); 
@@ -496,29 +487,53 @@ footer p {
 #page_station article h4 {
     text-align: center;
 }
-
+#graphique {
+    position: relative;
+    text-align: center;
+    top: 0px;
+    margin-bottom: 5%;
+    max-width: 50%;
+}
+section {
+    max-width: 90%;
+}
 @media screen and (min-width:1000px ) {
     #graphique {
         position: relative;
-        text-align: right;
-        top: 100px;
-    }
-    
-    table tr,td {
+        text-align: center;
+        top: 0px;
+        margin-bottom: 5%;
+    }    
+    table,td,tr{
         border: 1px solid black;
-
+        border-collapse: collapse;
     }
+    thead{
+        background-color: grey;
+        font-weight: bold;
+    }
+    th
     table {
-        width: 50px;
-        font-size: 0.7em;
+        font-size: 0.75em;
         position: relative;
-        top: -50px;
+        display: block;
     }
-
-
-    
-
-
+    #min {
+        color: blue;
+        font-weight: bold;
+    }
+    #moy {
+        font-weight: bold;
+        color: black;
+    }
+    #max {
+        font-weight: bold;
+        color: red;
+    }
+    #pluie {
+        font-weight: bold;
+        color: blueviolet;
+    }
 }
 
 
