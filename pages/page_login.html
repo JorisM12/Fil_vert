@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html id="page_connexion">
+<html>
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Topoclimat - connexion</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../style/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../style/style_b.css'>
     <link rel="shortcut icon" href="../image/logo.jpg">
 </head>
 <body>
@@ -26,10 +26,9 @@
                 <li><a href="../pages/page_deux.html">LA REGION</a></li>
                 <li><a href="../pages/page_climatoA.html">CLIMATOLOGIE</a></li>
                 <li><a href="./page_temps_reel.html">TEMPS REEL</a></li>
-                <li><a href="#">ARCHIVES</a></li>
             </ul>
        </nav>
-       <section>
+       <section id="grid">
             <h3 class="titre_divers" id="titre_login">ESPACE CONNEXION</h3>
             <section id="log_in">
                 <form action="#" method="post">
@@ -42,7 +41,7 @@
                         <input type="password" id="motdepasse" name="mot_de_passe">
                     </div>
                     <div class="boutonB">
-                        <input type="button" class="connexion" value="CONNEXION">
+                        <input type="submit" id="connexion" value="CONNEXION">
                     </div>
                 </form>
             </section>

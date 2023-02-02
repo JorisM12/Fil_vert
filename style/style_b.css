@@ -52,6 +52,9 @@ h2 {
 #log img {
     width: 40px;
 }
+.connexion {
+    display: none;
+}
 /* Barre de navigation  */
 nav {
     max-width: 100%;
@@ -83,8 +86,6 @@ nav li a {
     font-weight: 400;
     font-size: 0.8em;
 }
-
-
 /* Corps de la page  */
 main {
     display: flex;
@@ -257,7 +258,8 @@ footer p {
     nav {
         position:absolute;
         max-width: 100%;
-        top:22%;
+        top:17%;
+        margin-bottom: 50px;
     }
     nav ul {
         width: 700px;
@@ -282,7 +284,8 @@ footer p {
     #connexion {
         position: absolute;
         display: flex;
-        right: 300px;
+        right: 14%;
+        top: 1%;
         background-color: rgb(110, 116, 255);  
         border-radius: 3px;
         height: 30px;
@@ -305,221 +308,54 @@ footer p {
         font-weight: bold;
     }   
 } 
-
-
-
-
-
-/* body {
-    margin-left: 12%;
-    margin-right: 12%;
-    display: flex;
-    flex-direction: column;
-    font-family: Roboto, Arial;
-    font-weight: 200;
-} */
-
-
-
-/* .en_tete {
-    font-family: Roboto,Arial, Helvetica, sans-serif;
-    display: flex;
-    position: relative;
-    align-items: center;
-    flex-direction: column;
-    background-color:rgb(197, 199, 249);
-    height: 100px;
-    margin-top: 30px;
-    padding-left: 10px;
-    padding-top: 0;
-    width: 500px;
-    align-items: flex-start;
-    border-radius: 3px;
-    max-width: 100%;
-} */
-
-
-
-
-
-
-
-/* Barre de navigation 
-nav {
-    position: relative;
-    top: -45px;
-    max-width: 70%;
-    align-items: center;
-}
-nav ul {
-    display: flex;
-    list-style-type: none;
-}
-nav  li {
-    padding: 20px;
-    max-width: 100%;
-    background-color: rgba(192, 192, 192, 1);
-    border-radius: 3px;
-    transition: 0.5s;    
-}
-nav li:hover {
-    box-shadow: inset 0px 0px 0px 3px white;
-}
-nav li a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    font-weight: 400;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* @media screen and (max-width:1000px ) {
-    .page {
-        flex-direction: column;
-        
-    }
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .en_tete {
-        margin-top: -15px;
-        align-items: center;
-
-    }
-    nav {
-        display: none;
-    }
-    h3 {
-        visibility: hidden;
-    }
-    .connexion {
-        right: 200px;
-    }   
-}
-@media screen and (max-width:700px ) {
-    .connexion {
-        display: none;
-    }
-    #log {
-        display: block;
-        position: relative;
-        max-width: 40px;       
-    }    
-}
-@media screen and (max-width:540px ) {
-    ul{
-        opacity: 1;
-        transform: unset;
-        gap: unset;
-        position: initial;
-        flex-flow: initial;
-        margin-left: auto;
-    }
-    #log {
-        display: block;
-        left: 350px;
-    }
-    .en_tete {
-        max-width: 95%;
-        margin-bottom: 10px;
-    }
-    h1 {
-        font-size: 1.5em;
-    }
-    h2 {
-        font-size: 1.2em;
-    }
-} */
 /* CSS la région  */
-#page_deux {
-    font-weight: 200;
-    font-size: 0.8em;
-    text-align: justify;
-}
-#page_deux#log {
-    visibility: visible;
-    position:absolute;
-    top: 0;
-}
-#page_deux .titre_divers{
-    left: -350px;
-}
+
 .img_article_p2 {
-    float: right;
-    margin: 5px;
+    display: none;
+}
+.img_article_p2b{
+    display: none;
 }
 #page_deux main img {
     animation-name: image_anim;
     animation-duration:0.5s; 
 }
-#page_deux .titre_divers {
-    top: 30%;
-    left: 5%;
-    right: 0%;
-    font-size: 1em;
-}
-#page_deux section {
-    position: relative;
-    top: -75px;
-}
-.img_article_p2b {
-    float: left;
-    margin: 5px;
-}
-#titre_page_deux_b {
-    display: inline;
-    left: 350px;
-}
-@media screen and (min-width:1100px ) {
-    #page_deux {
-        font-size: 1em;
-    }
-    #page_deux section {
-        top:0;
-    }
+@media screen and (min-width:700px ) {
     .img_article_p2{
-        float: left;
+        display: block;
         text-align: center;
+        margin: 5px;
     }
     .img_article_p2b{
+        text-align: center;
+        display: block;
+        margin: 5px;
+    }   
+}
+@media screen and (min-width:1100px ) {
+    .img_article_p2{
+        display: block;
+        float: left;
+        text-align: center;
+        margin: 5px;
+    }
+    .img_article_p2b{
+        display: block;
         float: right;
-    }
-    #page_deux .titre_divers {
-        top: 0%;
-        left: 5%;
-        right: 0%;
-        font-size: 1.5em;
-    }
-    
-    
+        margin: 5px;
+    }   
 }
 /* CSS page connexion  */
-#page_connexion {
-    font-size:small;
-}
-#page_connexion section  {
+#grid{
+    position: relative;
+    text-align: center;
     display: grid;
-    grid-template-areas: "titreh3"
-                         "bloc_login"
-                         "quitter";
-    grid-template-columns: 1fr;
-    grid-template-rows: 50px 600px 100px  ;
+    grid-template-areas: ". titreh3 ."
+                         ". bloc_login ."
+                         ". quitter .";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 50px 400px 100px;
+    width: 100%;
 }
 .titre_log {
     position: relative;
@@ -531,33 +367,30 @@ nav li a {
     top: 0px;
     display: inline;
     text-align: center;
-    bottom: 15px;
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight: 700;
-    max-width: 38%;
+    padding: 20px;
+    align-items: center;
+    margin-bottom: 20px;
 }
 #log_in {
+    position: relative;
     grid-area: bloc_login;
     background-color: rgb(217, 217, 217);
-    max-height: 50%;
-    margin-top: 25px;
     border-radius: 3px;
-}
-#page_connexion  input.connexion {
-    display: block;
-    position: absolute;
-    top: -100%; 
+    max-height: 100%;
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
 }
 #titre_login {
     visibility: visible;
 }
-
-#page_connexion form {
+form {
     padding: 50px;
 }
 .in_form {
     margin:20px 0px 20px 0px;
-    text-align: center;
 }
 .in_form input{
     border-radius: 3px;
@@ -570,6 +403,8 @@ nav li a {
     height: 30px;
     align-content: center;
     padding: 5px;
+    width: 93%;
+    margin-top: 20px;
 }
 #exit p {
     display: block;
@@ -585,105 +420,26 @@ nav li a {
 #exit:hover {
     box-shadow: -1px 0px 13px 0px #000000;
 }
-#page_connexion  .connexion {
-    position: absolute;
-    display: flex;
-    background-color: rgb(110, 116, 255);  
-    border-radius: 3px;
-    height: 30px;
-    padding: 5px;
-    text-rendering: initial;
-    color: white;
-}
-#page_connexion .connexion:hover {
-    box-shadow: -1px 0px 13px 0px #000000;
-}
-#page_connexion  .connexion p {
-    display: block;
-    position: relative;
-    bottom: 10px;    
-}
+
 .boutonB {
-    position: relative;
-    left: 90%;
-    bottom: 10px;
+    position: relative;;
+    top: 50px;
+    left: -27%;
     background-color: #000000;
 }
-@media screen and (min-width:700px ) {
-    .log_in {
-        width: 500px;          
-    }
-    .in_form {
-        text-align: center;
-        padding-right: 50px;
-    }
-    .boutonB {
-        left: 50%;
-    }
-    h3#titre_login {
-        max-width: 47%;
-    }
-
+#connexion:hover {
+    box-shadow: -1px 0px 13px 0px #000000;
 }
-@media screen and (min-width:1000px ) {
-    .boutonB {
-        left: 10%;
-    }
-    #titre_login {
-        font-size: 1.5em;
-    }
-    #log_in {
-        width: 700px;   
-    }
-    label {
-        font-size: 1.2em;
-    }
-    #exit {
-        display: none;
-    }
-    h3#titre_login {
-        max-width: 70%;
-    }
-    form {
-        display: block;
-        position: relative;
-        top: -60%;
-        left: 5%;
-    }
+.boutonB {
+    display: block;
+    position: relative;
+    bottom: 10px;  
 }
-/* CSS page carte climato */
-#tab_climat {
-    display: flex;
-    flex-direction: column;
-}
-#tab_climat  li {
-    margin: 20px;
-    margin-right: 50px;
-    padding: 50px;
-    background-color: rgb(146, 146, 229);
-    list-style-type: none;
-    border-radius: 3px;
-}
-#tab_climat a {
+.boutonB input {
     text-decoration: none;
     color: white;
-}
-#tab_climat li:active {
-    box-shadow: inset 0px 0px 0px 3px white;    
-}
-#carte {
-    display: none;
-}
-/* CSS page climato grand ecran */
-@media screen and (min-width:1000px ) {
-    #tab_climat {
-        display: none;
-    }
-
-    #carte  {
-        display: block;
-    }
-}
+    font-weight: bold;
+}  
 /* CSS page station  */
 #donnees {
     visibility: hidden;
@@ -718,7 +474,7 @@ section {
     max-width: 50%;
     }
 }
-@media screen and (min-width:1000px){
+@media screen and (min-width:1100px){
     #graphique {
         position: relative;
         text-align: center;
@@ -782,5 +538,18 @@ section {
         text-align: center;
         font-size: 1.2em;
     }
+    #connexion:hover {
+        box-shadow: -1px 0px 13px 0px #000000;
+    }
+    .boutonB {
+        display: block;
+        position: relative;
+        bottom: 10px;  
+    }
+    .boutonB input {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }  
 }
 
