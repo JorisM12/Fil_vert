@@ -1,0 +1,3 @@
+-Le site est principalement en flex
+-Le formulaire de la page connexion est en grid
+-Toute les pages sont responsives
