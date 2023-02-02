@@ -4,6 +4,7 @@ body {
     display: flex;
     flex-direction:column;
     font-family:Roboto, Arial;
+    color: rgb(46, 45, 45);
     font-weight:200;
 }
 /* Haut de la page */
@@ -18,7 +19,16 @@ header {
     width: 100px;
     margin: 5px; 
     border-radius:50%;  
+    animation: anim_logo 1s linear;
 }
+@keyframes anim_logo {
+    0% {
+      transform: translateX(100px);
+    }
+    100% {
+      transform: translateX(0px);
+    }   
+  }
 .en_tete {
     display: flex;
     position: relative;
@@ -76,7 +86,7 @@ nav  li {
     padding: 10px;   
 }
 nav li:hover {
-    box-shadow: inset 0px 0px 0px 3px white;
+    box-shadow: inset 0px 0px 0px 5px white;
 }
 nav li a {
     top:25px;
