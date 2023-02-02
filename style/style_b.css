@@ -83,18 +83,17 @@ nav  a {
     border-radius: 3px;
     transition: 0.5s;   
     text-align: center;
-    margin: 0px;   
-}
-nav a:hover {
-    box-shadow: inset 0px 0px 0px 5px white;
-}
-nav a {
+    margin: 0px; 
     top:25px;
     color: white;
     font-weight: bold;
     text-decoration: none;
     font-weight: 400;
-    font-size: 0.8em;
+    font-size: 0.7em;  
+    padding: 20px;
+}
+nav a:hover {
+    box-shadow: inset 0px 0px 0px 5px white;
 }
 /* Corps de la page  */
 main {
@@ -218,8 +217,9 @@ footer p {
     nav  li { 
         padding: 20px;   
     }
-    nav li a {
+    nav  a {
         font-size: 1em;
+        padding: 0px;
     }
     .titre_divers {
         font-size: 1.05em;
@@ -265,9 +265,7 @@ footer p {
         font-size: 1.3em; ;
     }
     nav {
-        /* position:absolute; */
         max-width: 100%;
-        /* margin-bottom: 50px; */
     }
     nav ul {
         width: 700px;
@@ -275,8 +273,9 @@ footer p {
     nav  li { 
         padding: 20px;   
     }
-    nav li a {
+    nav  a {
         font-size: 1em;
+        padding: 0px;
     }
     .titre_divers {
         font-size: 1.2em;
@@ -418,13 +417,11 @@ form {
     display: block;
     position: relative;
     bottom: 10px; 
-    text-align: center;   
-}
-#exit a {
-    text-decoration: none;
+    text-align: center;  
     color: white;
-    font-weight: bold;
+    font-weight: bold; 
 }
+
 #exit:hover {
     box-shadow: -1px 0px 13px 0px #000000;
 }
