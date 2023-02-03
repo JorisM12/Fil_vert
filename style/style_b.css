@@ -14,7 +14,7 @@ header {
     flex-direction: column;
     align-items: center;
     border-radius: 3px;
-    animation: anim_img 70s linear infinite alternate;
+    animation: anim_img 75s linear infinite alternate;
 }
 @keyframes anim_img {
     0%{background-position: 0px;}
@@ -495,41 +495,11 @@ section {
 }
 @media screen and (min-width:1100px){
     #graphique {
-        float: left;
-        top: 0px;
-        width: 40%;
-    }  
-    @keyframes saut {
-        0% {
-          transform: translateY(0px);
-        }
-        50% {
-            transform: translateY(-20px);
-          }
-        100% {
-          transform: translateY(0px);
-        }   
-      }
-    #metz{
-        display: block;
-        position: absolute;
-        top: 87%;
-        left: 36%;
-        z-index: 10;
-        animation:saut 1.5s linear  infinite;
-    } 
-    #metz img {
-        width: 30px;
-    }
-    #localisation {
-        display: block;
         position: relative;
-        float: left;
         top: 0px;
-        margin-bottom: 5%;
-        max-width: 40%;
-        margin-left: 5%;
-    }
+        width: 45%;
+        left: 25%;
+    }  
     td,th,table{
         border: 1px solid black;
         border-collapse: collapse; 
